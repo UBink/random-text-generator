@@ -1,7 +1,7 @@
 //going for a star reading theme. creating arrays that have the words that will be randomized
 const stars = ['Polaris', 'Sirius', 'Alpha Centauri System', "Betelgeuse", 'Rigel', 'Vega', 'Pleiades', 'Antares', 'Canopus'];
 const reading = ["Good things are coming", "Be careful", "Oh! so bad I can't even start", 'You achieve great things in the future']
-const array3 = ['sushi', 'burger', 'salad', 'desert']
+const food = ['sushi', 'burger', 'salad', 'desert']
 
 //creating the randomizer function
 const randomizer = (arr1, arr2, arr3) => {
@@ -27,12 +27,12 @@ const randomizer = (arr1, arr2, arr3) => {
         container.push('Your star says: ' + arr2[j]);
     }
     //randomizing the third array
-    let l = Math.floor(Math.random() * arr3.length);
-    container.push('Your lucky food is: ' + arr3[l]);
+    let l = Math.floor(Math.random() * food.length);
+    container.push('Your lucky food is: ' + food[l]);
     
      //returning the randomized array
      return container.join('\n');
 }
 
 
-console.log(randomizer(stars, reading, array3));
+console.log(randomizer(stars, reading, food));
