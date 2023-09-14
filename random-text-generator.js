@@ -6,7 +6,7 @@ document.getElementById('generateButton').addEventListener('click', () => {
 
     
     const output = document.getElementById('output');
-    output.innerHTML = randomizer(stars, reading, food) + ;
+    output.innerHTML = randomizer(stars, reading, food);
 });
 // Your randomizer function with corrected loop condition
 const randomizer = (arr1, arr2, arr3) => {
